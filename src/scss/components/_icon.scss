@@ -28,6 +28,14 @@
   &--loading {
     @extend .animated-background;
   }
+  
+  &--BART {
+    background-image: url('/compound-components/assets/asset_FEI.svg') ;
+  }
+  
+  &--LISA {
+    background-image: url('/compound-components/assets/asset_FEI.svg') ;
+  }
 
   &--FEI {
     background-image: url('/compound-components/assets/asset_FEI.svg') ;

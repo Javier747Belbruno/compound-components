@@ -15,6 +15,7 @@ type Network
     | Sokol
     | Core
     | Development
+    | Fantomtestnet
     | Unknown
 
 
@@ -57,6 +58,9 @@ networkFromId networkIdVal =
         1337 ->
             Development
 
+        4002 ->
+            Fantomtestnet
+
         _ ->
             Unknown
 
@@ -81,6 +85,9 @@ networkFromName name =
 
         "development" ->
             Development
+
+        "fantomtestnet" ->
+            Fantomtestnet
 
         _ ->
             MainNet
@@ -122,6 +129,9 @@ networkName network =
         Development ->
             "Development"
 
+        Fantomtestnet ->
+            "Fantomtestnet"
+
         Unknown ->
             "unknown"
 
@@ -162,6 +172,9 @@ networkId network =
         Development ->
             999
 
+        Fantomtestnet ->
+            4002
+
         Unknown ->
             9999
 
@@ -201,6 +214,9 @@ getEtherscanDomain network =
 
         Development ->
             Nothing
+
+        Fantomtestnet ->
+            Just "testnet.ftmscan.com"
 
         Unknown ->
             Nothing

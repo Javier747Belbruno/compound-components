@@ -764,7 +764,7 @@ selectLedgerAddressModal userLanguage isCompoundChain model =
                                 ethBalanceString =
                                     case ledgerAccount.ethBalance of
                                         Just ethBalance ->
-                                            if networkId == 4002 then
+                                            if 1 == 4002 then
                                                 formatTokenBalanceWithSymbol ethBalance "FTM"
 
                                             else

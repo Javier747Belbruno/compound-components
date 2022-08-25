@@ -764,11 +764,7 @@ selectLedgerAddressModal userLanguage isCompoundChain model =
                                 ethBalanceString =
                                     case ledgerAccount.ethBalance of
                                         Just ethBalance ->
-                                            if 1 == 4002 then
-                                                formatTokenBalanceWithSymbol ethBalance "FTM"
-
-                                            else
-                                                formatTokenBalanceWithSymbol ethBalance "ETH"
+                                            formatTokenBalanceWithSymbol ethBalance "ETH"
 
                                         _ ->
                                             Translations.none userLanguage

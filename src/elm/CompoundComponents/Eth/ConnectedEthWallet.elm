@@ -766,6 +766,9 @@ selectLedgerAddressModal userLanguage isCompoundChain model =
                                         Just ethBalance ->
                                             formatTokenBalanceWithSymbol ethBalance "FTM"
 
+                                        Just ethBalance ->
+                                            formatTokenBalanceWithSymbol ethBalance "ETH"
+
                                         _ ->
                                             Translations.none userLanguage
                             in
